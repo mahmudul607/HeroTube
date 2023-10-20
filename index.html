@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeroTube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="flex my-10 bm-1 top_header">
+            <div class="logo flex-auto mx-10">
+                <img src="./assets/img/Logo.png" alt="Logo">
+            </div>
+            <div class="filter_area flex-auto">
+                <button id="sort_btn" onclick="sortData()" class="btn btn-active btn-ghost">Short By View</button>
+            </div>
+            <div class="blog flex-auto text-center">
+                <button class="btn btn-secondary">Blog</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main text-center" id="category_area">
+            <ul id="categorie_container" class="menu sm:menu-vertical xs:menu-vertical lg:menu-horizontal menu-horizontal bg-base-200 rounded-box ">
+               
+            </ul>
+        </div>
+        <div id="card_container" class="cards">
+        </div>
+    </main>
+   <footer>
+  
+
+   </footer>
+<script>
+    var s= true;
+</script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
