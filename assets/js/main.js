@@ -4,6 +4,8 @@ const categories = () => {
         .then(res => res.json())
         .then(data => displayCategory(data.data))
 
+        
+
 }
 
 // Categories 
@@ -52,6 +54,23 @@ const loadData = async (id=1000) =>{
     // for checking
     // console.log(dataStore);
     displayData(dataStore);
+    
+
+    const sortClick = document.getElementById('sort_btn').addEventListener('click', ()=>{
+
+        const sortData = dataStore.sort((a,b) => parseFloat(b.others.views) - parseFloat(a.others.views)
+
+        )
+        if(sortClick === true){
+            displayData(sortData);
+        }
+        else{
+            displayData(dataStore);
+        }
+    });
+
+   
+
    
 }
 
